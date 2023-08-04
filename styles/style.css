@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat&display=swap');
+
+:root {
+    --cor--primaria: #2E3337;
+    --cor--secundaria: #CFC0B9;
+    --cor--terciaria: #BF6849;
+    --cor--hover: #848B8C;
+    --fonte--principal: 'Krona One', sans-serif;
+    --fonte--secundaria: 'Montserrat', sans-serif;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor--primaria);
+    color: var(--cor--secundaria);
+    font-family: var(--fonte--secundaria);
+}
+
+.titulo-destaque {
+    color: var(--cor--terciaria);
+
+}
+
+span {
+    font-weight: bold;
+    color: var(--cor--terciaria);
+    border: 1px solid var(--cor--terciaria);
+    padding: 10px;   
+
+}
+
+span:hover {
+    color: var(--cor--secundaria);
+    border: none;
+}
+
+.paragrafo-negrito {
+    font-weight: bold;
+}
+
+.apresentacao {
+    display: flex;
+    justify-content: space-between;
+    padding: 8% 15%;
+    gap: 82px;
+    align-items: center;
+
+}
+
+.apresentacao__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+}
+
+
+.apresentacao__conteudo__titulo {
+    font-size: 2.25rem;
+    font-family: var(--fonte--principal);
+}
+
+.apresentacao__conteudo__texto {
+    font-family: var(--fonte--secundaria);
+    color: var(--cor--secundaria);
+    font-size: 1.5rem;
+}
+
+.apresentacao__botao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 32px;
+    width: 100%;
+}
+
+.apresentacao__botao__design {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    border: 2px solid var(--cor--terciaria);
+    width: 100%;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding: 21.5px 0;
+    text-decoration: none;
+    color: var(--cor--secundaria);
+    font-family: var(--fonte--secundaria);
+    cursor: pointer;
+    background-color: var(--cor--primaria);
+}
+
+.apresentacao__botao__design:hover {
+    background-color: var(--cor--hover);
+}
+.imagem-daniel {
+    border-radius: 20px;
+    width: 50%;
+    height: 50%;
+}
+
+.apresentacao__botao__subtitulo {
+    font-family: var(--fonte--principal);
+    font-weight: 400;
+    font-size: 1.5rem;
+}
+
+.fa-brands {
+    color: var(--cor--terciaria);
+    width: 32px;
+}
+
+.rodape {
+    background-color: var(--cor--terciaria);
+    text-align: center;
+    color: var(--cor--primaria);
+    padding: 21px 0;
+    font-size: 1.5rem;
+    font-family: var(--fonte--secundaria);
+    width: 100%;
+
+}
+
+.cabecalho {
+
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: left;
+    column-gap: 40px;
+    padding: 2% 0 0 15%;
+}
+
+.cabecalho__menu__link {
+    font-family: var(--fonte--principal);
+    color: var(--cor--terciaria);
+    font-size: 1.5rem;
+    text-decoration: none;
+    gap: 80px;
+}
+
+.cabecalho__menu__link:hover {
+    color: var(--cor--secundaria);
+    cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+    .apresentacao {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .apresentacao__conteudo {
+        width: auto;
+        text-align: center;
+    }
+
+    .apresentacao__botao {
+        width: 100%;
+    }
+
+    .imagem-daniel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+        padding: 10% 10% 2% 10%;
+    }
+
+    span {
+        text-align: center;
+    }
+
+    .titulo-destaque {
+        text-align: center;
+    }
+}
+
+@media (max-width: 650px) {
+    .cabecalho__menu {
+        column-gap: 20px;
+    }
+
+    .apresentacao {
+        font-size: 0.7rem;
+        padding: 8% 15%;
+    }
+
+    .apresentacao__conteudo__titulo {
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    .apresentacao__conteudo__texto {
+        font-size: 1.2rem;
+    }
+
+    .apresentacao__botao {
+        gap: 20px;
+    }
+
+    .rodape {
+        font-size: 1rem;
+    }
+}
