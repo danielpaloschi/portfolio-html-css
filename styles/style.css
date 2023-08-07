@@ -99,6 +99,7 @@ span:hover {
     border-radius: 20px;
     width: 50%;
     height: auto;
+    aspect-ratio: 1;
 }
 
 .apresentacao__botao__subtitulo {
